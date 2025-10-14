@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BLOGSITE - Tech, Food, and Travel</title>
     <link rel="stylesheet" href="./style.css">
-    <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        // Tailwind Configuration
         tailwind.config = {
             theme: {
                 extend: {
@@ -16,7 +14,7 @@
                         sans: ['Inter', 'sans-serif'],
                     },
                     colors: {
-                        'primary-blue': '#3b82f6', // blue-500
+                        'primary-blue': '#3b82f6',
                         'card-bg': 'rgb(181, 197, 255)', 
                     }
                 }
@@ -25,17 +23,15 @@
     </script>
 </head>
 <body>
-    <!-- Use Tailwind p-4 (mobile) and sm:p-10 (desktop) to ensure side margins are responsive -->
     <div class="Top Header p-4 sm:p-10">
         <header>
-            <div id="header-controls">
-                <!-- Title & Tagline are now stacked on mobile -->
+            <div id="header-controls"
                 <div>
                     <h1 class="header">BLOGSITE</h1>
                     <div class="tagline">A Personal Blog about Technology, Food and Travel</div>
                 </div>
                 
-                <!-- Search Bar: w-full on mobile, fixed width on sm+ screens -->
+               
                 <div class="search-bar flex items-stretch"> 
                     <input id="search-input" type="text" placeholder="Search by title..." class="p-2 rounded-l text-black focus:outline-none flex-grow sm:w-40">
                     <button id="search-button" type="button" class="bg-gray-200 text-gray-700 hover:bg-white p-2 rounded-r transition-colors flex-shrink-0">Search</button>
@@ -52,15 +48,12 @@
             </nav>
         </div>
     </div>
-
-    <!-- Main Content Area for Blog Posts -->
+    
     <div id="main-content" class="Main-content">
-        <!-- Blog posts will be injected here by JavaScript -->
+        
     </div>
 
-    <!-- Pagination Controls -->
-    <div id="pagination" class="flex justify-center items-center gap-2 p-5">
-        <!-- Pagination buttons will be injected here by JavaScript -->
+    <div id="pagination" class="flex justify-center items-center gap-2 p-5"
     </div>
 
     <footer class="bg-gray-800 text-white p-6 mt-10">
@@ -77,3 +70,4 @@
     <script src="./script.js"></script>
 </body>
 </html>
+
